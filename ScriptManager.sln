@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskerManager", "TaskerManager.csproj", "{30B5CAF7-3659-454E-BB1E-F3C47C65A168}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScriptManager", "ScriptManager.csproj", "{30B5CAF7-3659-454E-BB1E-F3C47C65A168}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

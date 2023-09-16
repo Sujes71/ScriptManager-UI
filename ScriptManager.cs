@@ -5,7 +5,7 @@ using System.Windows.Forms;
 
 namespace TaskerManager
 {
-    public partial class TaskerManager : Form
+    public partial class ScriptManager : Form
     {
         public const string scriptsFolderPath = "C:\\AutoHotkey";
         public int page = 1;
@@ -14,7 +14,7 @@ namespace TaskerManager
         public int endIndex = 10;
         string[] scriptFiles;
 
-        public TaskerManager()
+        public ScriptManager()
         {
             InitializeComponent();
         }
@@ -22,8 +22,10 @@ namespace TaskerManager
         private void LoadScripts(object sender, EventArgs e)
         {
             scriptFiles = Directory.GetFiles(scriptsFolderPath, "*.ahk");
-            assignStartEndIndex();
+            AssignStartEndIndex();
             LoadNextScripts(startIndex, endIndex);
+            ReloadButton.Visible = true;
+            ScriptPanel.Visible = true;
         }
 
         private void ScriptButton_Click(object sender, EventArgs e)
@@ -49,7 +51,7 @@ namespace TaskerManager
             if (File.Exists(scriptFilePath))
             {
                 // Abre el script en un editor de texto (por ejemplo, Notepad).
-                System.Diagnostics.Process.Start("notepad.exe", scriptFilePath);
+                System.Diagnostics.Process.Start("notepad++.exe", scriptFilePath);
             }
             else
             {
@@ -62,15 +64,15 @@ namespace TaskerManager
             if (page < totalPages)
             {
                 page++;
-                assignStartEndIndex();
+                AssignStartEndIndex();
                 LoadNextScripts(startIndex, endIndex);
 
-                prevVerification();
-                nextVerification();
+                PrevVerification();
+                NextVerification();
             }
         }
 
-        public void assignStartEndIndex()
+        public void AssignStartEndIndex()
         {
             startIndex = (this.page * 10) - 10;
             endIndex = Math.Min(scriptFiles.Length, startIndex + 10);
@@ -81,11 +83,11 @@ namespace TaskerManager
             if (page > 1)
             {
                 page--;
-                assignStartEndIndex();
+                AssignStartEndIndex();
                 LoadNextScripts(startIndex, endIndex);
 
-                prevVerification();
-                nextVerification();
+                PrevVerification();
+                NextVerification();
             }
         }
 
@@ -115,6 +117,7 @@ namespace TaskerManager
                 scriptTextBox.KeyDown += ScriptTextBox_KeyDown;
                 scriptTextBox.Tag = scriptFile; // Almacena la ruta del archivo.
                 scriptTextBox.TextAlign = HorizontalAlignment.Center;
+                scriptTextBox.BackColor = SystemColors.ControlLightLight;
 
                 // Crear un botón de ejecución.
                 Button startButton = new Button();
@@ -124,6 +127,8 @@ namespace TaskerManager
                 startButton.Anchor = AnchorStyles.None;
                 startButton.Size = new Size(40, 20);
                 startButton.Font = new Font(startButton.Font.FontFamily, 6.5f);
+                startButton.Font = new Font("Unispace", 6F, ((FontStyle)((FontStyle.Bold | FontStyle.Italic))), GraphicsUnit.Point, ((byte)(0)));
+                startButton.BackColor = SystemColors.ControlLightLight;
 
                 // Crear un botón de edición.
                 Button editButton = new Button();
@@ -133,6 +138,8 @@ namespace TaskerManager
                 editButton.Anchor = AnchorStyles.None;
                 editButton.Size = new Size(40, 20);
                 editButton.Font = new Font(editButton.Font.FontFamily, 6.5f);
+                editButton.Font = new Font("Unispace", 6F, ((FontStyle)((FontStyle.Bold | FontStyle.Italic))), GraphicsUnit.Point, ((byte)(0)));
+                editButton.BackColor = SystemColors.ControlLightLight;
 
                 // Crear un botón de Eliminar.
                 Button deleteButton = new Button();
@@ -140,8 +147,10 @@ namespace TaskerManager
                 deleteButton.Tag = scriptFile;
                 deleteButton.Click += DeleteButton_Click;
                 deleteButton.Anchor = AnchorStyles.None;
-                deleteButton.Size = new Size(40, 20);
+                deleteButton.Size = new Size(45, 20);
                 deleteButton.Font = new Font(deleteButton.Font.FontFamily, 6.5f);
+                deleteButton.Font = new Font("Unispace", 6F, ((FontStyle)((FontStyle.Bold | FontStyle.Italic))), GraphicsUnit.Point, ((byte)(0)));
+                deleteButton.BackColor = SystemColors.ControlLightLight;
 
                 // Agregar el TextBox y los botones al TableLayoutPanel en la fila actual.
                 scriptsTableLayoutPanel.Controls.Add(scriptTextBox, 0, row_count);
@@ -155,16 +164,16 @@ namespace TaskerManager
 
             totalPages = (int)Math.Ceiling((double)(scriptFiles.Length - startIndex) / 10);
 
-            nextVerification();
-            prevVerification();
+            NextVerification();
+            PrevVerification();
         }
 
-        private void prevVerification()
+        private void PrevVerification()
         {
             PrevButton.Enabled = page > 1;
         }
 
-        private void nextVerification()
+        private void NextVerification()
         {
             NextButton.Enabled = page < totalPages;
         }
@@ -185,15 +194,15 @@ namespace TaskerManager
                 // Puedes abrir el archivo AHK con Notepad usando Process.Start.
                 try
                 {
-                    System.Diagnostics.Process.Start("notepad.exe", filePath);
+                    System.Diagnostics.Process.Start("notepad++.exe", filePath);
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Error al abrir Notepad: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Error al abrir Notepad++: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            nextVerification();
-            prevVerification();
+            NextVerification();
+            PrevVerification();
         }
 
         private void ReloadButton_Click(object sender, EventArgs e)
