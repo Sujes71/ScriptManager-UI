@@ -1,0 +1,10 @@
+C:\Users\destr\source\repos\TaskerManager\bin\Debug\TaskerManager.exe.config
+C:\Users\destr\source\repos\TaskerManager\bin\Debug\TaskerManager.exe
+C:\Users\destr\source\repos\TaskerManager\bin\Debug\TaskerManager.pdb
+C:\Users\destr\source\repos\TaskerManager\obj\Debug\TaskerManager.csproj.AssemblyReference.cache
+C:\Users\destr\source\repos\TaskerManager\obj\Debug\TaskerManager.Properties.Resources.resources
+C:\Users\destr\source\repos\TaskerManager\obj\Debug\TaskerManager.csproj.GenerateResource.cache
+C:\Users\destr\source\repos\TaskerManager\obj\Debug\TaskerManager.csproj.CoreCompileInputs.cache
+C:\Users\destr\source\repos\TaskerManager\obj\Debug\TaskerManager.exe
+C:\Users\destr\source\repos\TaskerManager\obj\Debug\TaskerManager.pdb
+C:\Users\destr\source\repos\TaskerManager\obj\Debug\TaskerManager.TaskerManager.resources
