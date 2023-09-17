@@ -44,9 +44,9 @@
             this.scriptLabel.AutoSize = true;
             this.scriptLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.scriptLabel.Font = new System.Drawing.Font("Unispace", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scriptLabel.Location = new System.Drawing.Point(285, 15);
+            this.scriptLabel.Location = new System.Drawing.Point(273, 14);
             this.scriptLabel.Name = "scriptLabel";
-            this.scriptLabel.Size = new System.Drawing.Size(239, 33);
+            this.scriptLabel.Size = new System.Drawing.Size(253, 34);
             this.scriptLabel.TabIndex = 4;
             this.scriptLabel.Text = "SCRIPT MANAGER";
             // 
@@ -116,7 +116,7 @@
             this.scriptsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.scriptsTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.scriptsTableLayoutPanel.Font = new System.Drawing.Font("Unispace", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.scriptsTableLayoutPanel.Location = new System.Drawing.Point(173, 9);
+            this.scriptsTableLayoutPanel.Location = new System.Drawing.Point(191, 9);
             this.scriptsTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
             this.scriptsTableLayoutPanel.Name = "scriptsTableLayoutPanel";
             this.scriptsTableLayoutPanel.RowCount = 10;
