@@ -18,3 +18,7 @@ C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.csproj.Generat
 C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.csproj.CoreCompileInputs.cache
 C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.exe
 C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.pdb
+C:\Users\destr\source\repos\ScriptManager\bin\Debug\ScriptManager.exe.manifest
+C:\Users\destr\source\repos\ScriptManager\bin\Debug\ScriptManager.application
+C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.exe.manifest
+C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.application
