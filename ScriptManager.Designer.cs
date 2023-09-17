@@ -1,4 +1,4 @@
-﻿namespace TaskerManager
+﻿namespace ScriptManager
 {
     partial class ScriptManager
     {

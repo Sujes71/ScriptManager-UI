@@ -12,7 +12,6 @@ C:\Users\destr\source\repos\ScriptManager\bin\Debug\ScriptManager.exe.config
 C:\Users\destr\source\repos\ScriptManager\bin\Debug\ScriptManager.exe
 C:\Users\destr\source\repos\ScriptManager\bin\Debug\ScriptManager.pdb
 C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.csproj.AssemblyReference.cache
-C:\Users\destr\source\repos\ScriptManager\obj\Debug\TaskerManager.ScriptManager.resources
 C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.Properties.Resources.resources
 C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.csproj.GenerateResource.cache
 C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.csproj.CoreCompileInputs.cache
@@ -22,3 +21,4 @@ C:\Users\destr\source\repos\ScriptManager\bin\Debug\ScriptManager.exe.manifest
 C:\Users\destr\source\repos\ScriptManager\bin\Debug\ScriptManager.application
 C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.exe.manifest
 C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.application
+C:\Users\destr\source\repos\ScriptManager\obj\Debug\ScriptManager.ScriptManager.resources
